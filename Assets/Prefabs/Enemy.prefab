@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1490020956360340918}
   - component: {fileID: 1490020956360340917}
   - component: {fileID: 1490020956360340916}
+  - component: {fileID: 332073863}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -141,3 +142,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &332073863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490020956360340923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea9ec854d584784c86342f0b5a01f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
+  _maxTimeWaiting: 2
+  _enemyPath: {fileID: 0}
