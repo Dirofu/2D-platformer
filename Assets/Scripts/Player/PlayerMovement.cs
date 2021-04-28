@@ -7,8 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
-    [SerializeField] private int _numberLayer;
-    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private GameObject _whatIsGround;
 
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _renderer;
@@ -54,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == _numberLayer)
+        if (collision.gameObject.layer == _whatIsGround.layer)
         {
             Grounded = true;
         }
